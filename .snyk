@@ -1,0 +1,11 @@
+# Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.
+version: v1.22.1
+ignore: {}
+# patches apply the minimum changes required to fix a vulnerability
+patch:
+  'npm:minimatch:20160620':
+    - '@balena/doxx > metalsmith-prefixoid > multimatch > minimatch':
+        patched: '2021-12-17T10:20:40.239Z'
+  'npm:uglify-js:20151024':
+    - '@balena/doxx > swig > uglify-js':
+        patched: '2021-12-17T10:20:40.239Z'
