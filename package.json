@@ -15,7 +15,9 @@
     "build:fast": "./tools/build.sh && webpack --mode production",
     "watch-pages": "watch ./tools/build.sh pages shared templates config",
     "watch-assets": "webpack --mode=development -w",
-    "watch": "npm run watch-pages & npm run watch-assets"
+    "watch": "npm run watch-pages & npm run watch-assets",
+    "prepublish": "npm run snyk-protect",
+    "snyk-protect": "snyk-protect"
   },
   "repository": {
     "type": "git",
@@ -39,7 +41,8 @@
     "jquery": "3.6.0",
     "jquery-colorbox": "1.6.4",
     "lodash": "^4.17.21",
-    "popper.js": "^1.16.1"
+    "popper.js": "^1.16.1",
+    "@snyk/protect": "latest"
   },
   "devDependencies": {
     "american-british-english-translator": "^0.1.4",
@@ -54,5 +57,6 @@
   },
   "versionist": {
     "publishedAt": "2021-12-16T23:58:31.322Z"
-  }
+  },
+  "snyk": true
 }
