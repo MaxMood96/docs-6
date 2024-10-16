@@ -19,18 +19,11 @@ mkdir -p $masterclass_path
 # Debugging Masterclass
 mkdir -p $masterclass_path/debugging/ &
 
-cd pages/learn/manage && $SCRIPT_DIR/extract-markdown.sh "Accessing your device" <support-access.md >access-device.md && mv access-device.md $masterclass_path/debugging/ &
+cd pages/learn/accounts && $SCRIPT_DIR/extract-markdown.sh "Accessing your device" <support-access.md >access-device.md && mv access-device.md $masterclass_path/debugging/ &
 
-cd pages/learn/manage && $SCRIPT_DIR/extract-markdown.sh "Granting Support Access to a Support Agent" <support-access.md >support-access-device.md && mv support-access-device.md $masterclass_path/debugging/ &
+cd pages/learn/accounts && $SCRIPT_DIR/extract-markdown.sh "Granting Support Access to a Support Agent" <support-access.md >support-access-device.md && mv support-access-device.md $masterclass_path/debugging/ &
 
-cd pages/reference/ && $SCRIPT_DIR/extract-markdown.sh "Getting Started" <diagnostics.md >initial-diagnosis.md && mv initial-diagnosis.md $masterclass_path/debugging/ &
-
-# Diagnostics part is fetched directly into the directory. Refer fetch-external.sh
-# cd pages/reference/ && $SCRIPT_DIR/extract-markdown.sh "Device Diagnostics" <device-diagnostics.md >device-diagnostics-partial.md && mv device-diagnostics-partial.md $masterclass_path/debugging/ &
-
-# cd pages/reference/ && $SCRIPT_DIR/extract-markdown.sh "Supervisor State" <supervisor-state.md >supervisor-diagnostics.md && mv supervisor-diagnostics.md $masterclass_path/debugging/ &
-
-cd pages/faq/troubleshooting/ && $SCRIPT_DIR/extract-markdown.sh "Accessing a Device using a Gateway Device" <debugging-device-gateway.md >device-gateway-partial.md && mv device-gateway-partial.md $masterclass_path/debugging/ &
+cd pages/faq/ && $SCRIPT_DIR/extract-markdown.sh "Accessing a Device using a Gateway Device" <debugging-device-gateway.md >device-gateway-partial.md && mv device-gateway-partial.md $masterclass_path/debugging/ &
 
 cd pages/learn/manage && $SCRIPT_DIR/extract-markdown.sh "Device Logs" <device-logs.md >device-logs-partial.md && mv device-logs-partial.md $masterclass_path/debugging/ &
 
@@ -47,6 +40,6 @@ cd pages/learn/manage && $SCRIPT_DIR/extract-markdown.sh "Device Connectivty sta
 
 # cd pages/reference/OS && $SCRIPT_DIR/extract-markdown.sh "Using the Kernel Logs" <debugging-balenaos.md >kernel-logs.md && mv kernel-logs.md $masterclass_path/debugging/ &
 
-cd pages/faq/troubleshooting && $SCRIPT_DIR/extract-markdown.sh "Storage Media Debugging" <debugging-storage-media.md >storage-media.md && mv storage-media.md $masterclass_path/debugging/ &
+cd pages/faq/ && $SCRIPT_DIR/extract-markdown.sh "Storage Media Debugging" <debugging-storage-media.md >storage-media.md && mv storage-media.md $masterclass_path/debugging/ &
 
 wait

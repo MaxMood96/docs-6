@@ -64,7 +64,7 @@ Should you wish to add an unconfigured device to your {{ $names.cloud.lower }} f
 
  The {{ $names.os.lower }} userspace packages only provide the bare essentials for running containers, while still offering flexibility. The philosophy is that software and services always default to being in a container unless they are generically useful to all containers, or they absolutely can’t live in a container. The userspace consists of many open source components, but in this section, we will highlight some of the most important services.
 
-![{{ $names.os.upper }} Components](/img/common/balenaos/balenaOS-components.png)
+![{{ $names.os.upper }} Components](/img/common/balenaos/balenaOS-components.webp)
 
 ### systemd
 
@@ -108,7 +108,7 @@ __Note__: {{ $names.os.upper }} versions < v2.38.0 use [dropbear][dropbear] as t
 
 ## Image Partition Layout
 
-![Image partition layout](/img/common/balenaos/image-partition-layout.png)
+![Image partition layout](/img/common/balenaos/image-partition-layout.webp)
 
 The first partition, `resin-boot`, holds important boot files according to each board (e.g. kernel image, bootloader image). It also holds the `config.json` file, which is the central point of [configuring {{ $names.os.lower }}][config-json] and defining its behavior. For example using `config.json` you can set your hostname, add SSH keys, allow persistent logging or define custom DNS servers.
 
@@ -128,7 +128,7 @@ The first partition, `resin-boot`, holds important boot files according to each 
 
 A diagram of our read-only rootfs can be seen below:
 
-![Read only rootFS](/img/common/balenaos/read-only-rootfs.png)
+![Read only rootFS](/img/common/balenaos/read-only-rootfs.webp)
 
 ## {{ $names.os.upper }} Yocto Composition
 
@@ -170,17 +170,16 @@ __Note:__ Instructions for adding custom board support may be found [here][custo
 [config-json-hostname]:/reference/OS/configuration/#hostname
 [config-json-logging]:/reference/OS/configuration/#persistentlogging
 [config-json-ssh]:/reference/OS/configuration/#sshkeys
-[containerisation]:http://en.wikipedia.org/wiki/Operating_system%E2%80%93level_virtualization
+[containerisation]:https://en.wikipedia.org/wiki/Operating_system%E2%80%93level_virtualization
 [chrony]:https://en.wikipedia.org/wiki/Chrony
 [custom-build]:{{ $links.osSiteUrl }}/docs/custom-build/#Supporting-your-Own-Board
 [deploy-to-fleet]:/learn/deploy/deployment/
 [dnsmasq]:https://wiki.archlinux.org/index.php/Dnsmasq
 [Docker]:https://www.docker.com/
-[Dockerfile]:http://docs.docker.com/reference/builder/
 [dropbear]:https://matt.ucc.asn.au/dropbear/dropbear.html
 [fleet-configuration]:/learn/manage/configuration/#fleet-configuration-variables
 [hostos-updates]:/reference/OS/updates/self-service/
-[linux]:http://en.wikipedia.org/wiki/Linux
+[linux]:https://en.wikipedia.org/wiki/Linux
 [local-mode]:/learn/develop/local-mode/
 [modem-manager]:https://www.freedesktop.org/wiki/Software/ModemManager/
 [network-manager]:https://wiki.gnome.org/Projects/NetworkManager

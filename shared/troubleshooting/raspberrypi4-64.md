@@ -31,7 +31,7 @@ This is either because it is not connected to the network or because the network
 If the `ACT` LED blinks with the repeated pattern of 7 quick flashes and a pause (`*_*_*_*_*_*_*____*_*_*_*_*_*_*____`), this means that the Raspberry Pi boot loader is not able to load the correct kernel.img.
 * The first thing to check here is that you are using the right OS image for your board type. If you look at the small white print near the GPIO pins of the Raspberry Pi you should see the type of Raspberry Pi you have. You need to ensure that this is the same as the device type that you selected when creating the fleet on the {{ $names.company.lower }} dashboard. You can check the type of device for an existing fleet by looking at the 'How to add devices' help text inside the fleet or the icon for that fleet on your dashboard.
 * It's important to note that a Raspberry Pi 2 fleet's balenaOS image will not boot on a Raspberry Pi 1 board and vice versa.
-* For more in-depth info the boot related LED patterns have a look at the [Raspberry Pi wiki](http://elinux.org/R-Pi_Troubleshooting#Green_LED_blinks_in_a_specific_pattern).
+* For more in-depth info the boot related LED patterns have a look at the [Raspberry Pi wiki](https://elinux.org/R-Pi_Troubleshooting#Green_LED_blinks_in_a_specific_pattern).
 
 #### Poor Power Supply
 If you have a screen attached to your Raspberry Pi and notice that there is a small flashing colorful square in the top right of the screen, it could be the case that your power supply or USB cable is not suitable. Take a look at the [Troubleshooting Power Problems](http://elinux.org/R-Pi_Troubleshooting#Troubleshooting_power_problems) page on the Raspberry Pi wiki. Additionally, if the onboard `PWR` LED is flashing intermittently, this too could indicate issues with the power supply.
@@ -51,7 +51,7 @@ Raspberry Pi 4 Model B Rev 1.5
 
 2. Look for the Dialog DA9090 power management controller next to the USB-C port. Check the picture below for reference.
 
-<img src="/img/troubleshooting/DA9090_identified.jpg" width="50%">
+<img src="/img/troubleshooting/DA9090_identified.webp" width="50%">
 
 For more information about Raspberry Pi 4 Model B Rev 1.5, please refer to "PCN Raspberry Pi 4B Rev 9" in the [Product Information Portal](https://pip.raspberrypi.com) by Raspberry Pi.
 

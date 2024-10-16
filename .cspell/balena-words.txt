@@ -19,6 +19,7 @@ Fincm
 flowzone
 generic
 hostapp
+hostvia
 Katapult
 kompose
 landr
@@ -35,6 +36,5 @@ Seeed
 sshproxy
 testbot
 undiscounted
-versionbot
 Versionist
 volume-pricing

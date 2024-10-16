@@ -3,6 +3,7 @@ node_modules/
 server/nav.json
 npm-debug.log
 static/dist
+contracts/
 
 .#*
 
@@ -24,6 +25,8 @@ pages/reference/supervisor/upgrade-policy.md
 pages/learn/deploy/release-strategy/update-locking.md
 
 pages/reference/diagnostics.md
+pages/reference/device-diagnostics.md
+pages/reference/supervisor-state.md
 
 pages/learn/more/masterclasses/cli-masterclass.md
 pages/learn/more/masterclasses/advanced-cli.md
@@ -37,12 +40,17 @@ pages/reference/OS/updates/rollbacks.md
 pages/reference/OS/customer-board-support.md
 pages/reference/OS/debugging-balenaos.md
 
+pages/reference/base-images/base-images-ref.md
+
 # Ignore dynamic docs created for masterclasses
 shared/masterclass
 
 # Ignore dynamic assets generated for Getting Started
 static/img/device/**
 config/dictionaries/device.json
+
+# Ignore generated docs for base images
+shared/general/base-images.md
 
 # Curl error output
 output

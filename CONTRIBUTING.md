@@ -4,9 +4,9 @@ Thank you for contributing to the docs! We have a few guidelines which will allo
 
 ## Creating Commits in line with Semantic Versioning
 
-> **TL:DR** The docs version numbering adheres to [Semantic Versioning](http://semver.org/). **Please include *at least one commit* in the PR that marks the change-type for the system.** 
+> **TL:DR** The docs version numbering adheres to [Semantic Versioning](https://semver.org/). **Please include *at least one commit* in the PR that marks the change-type for the system.** 
 
-This change-type can be specified by adding it as a prefix, i.e., `minor: Add some new feature` while creating the commit. This is so the PR can be automatically versioned and a changelog generated for it by using versionbot. One can choose one of 3 `Change-type` options on the nature of the file change. 
+This change-type can be specified by adding it as a prefix, i.e., `minor: Add some new feature` while creating the commit. This is so the PR can be automatically versioned and a changelog generated for it by using versionist. One can choose one of 3 `Change-type` options on the nature of the file change. 
 
 - `patch` - For tiny changes that include typo fixes, updating screenshots, adding clarification notes, etc.
 - `minor` - For moderate changes that include updating packages, rewriting documentation, adding new features.
@@ -38,11 +38,11 @@ This will allow the system to version the documentation using the `Change-type` 
 
 Images and screenshots help the user in better understanding of the docs. Before adding a screenshot, make sure to keep the area in focus, text is clearly visible and doesn't have any identifying information. Rename the screenshot appropriately and make sure to upload them to the right path.
 
-![](./static/img/common/billing/plan_selection.png)
+![](./static/img/common/billing/plan_selection.webp)
 
 Do mark the menu options, buttons or tabs with a red box as and when needed.
 
-![](./static/img/common/billing/current_plan.png)
+![](./static/img/common/billing/current_plan.webp)
 
 Images for the documentation are stored in [static/img](https://github.com/balena-io/docs/tree/master/static/img) directory. Screenshots of the dashboard are commonly stored in the [common](https://github.com/balena-io/docs/tree/master/static/img/common) directory.  
 
@@ -53,13 +53,13 @@ To add an image to the documentation,
 3. When added, refer and add them to the relevant documentation page using either the markdown format.
 
 ```markdown
-![Description of the image](/img/common/app/cool-looking-image.png)
+![Description of the image](/img/common/app/cool-looking-image.webp)
 ```
 
 OR use the HTML `<img>` tag
 
 ```html
-<img alt="Description about the image" src="/img/common/app/cool-looking-image.png">
+<img alt="Description about the image" src="/img/common/app/cool-looking-image.webp">
 ```
 
 ## Adding links to the docs
@@ -94,9 +94,9 @@ If a page is removed that may be linked externally to some other docs, do rememb
 
 Currently, the following reference material is pulled from other repositories:
 - [Device Supervisor API](https://www.balena.io/docs/reference/supervisor/supervisor-api/) and [Device Supervisor upgrades](https://www.balena.io/docs/reference/supervisor/supervisor-upgrades), sourced from https://github.com/balena-io/balena-supervisor/tree/master/docs
-- [CLI](https://www.balena.io/docs/reference/cli/) sourced from https://github.com/balena-io/balena-cli/blob/master/doc/cli.markdown
-- [Node SDK](https://www.balena.io/docs/reference/sdk/node-sdk/) sourced from https://github.com/balena-io/balena-sdk/blob/master/DOCUMENTATION.md
-- [Python SDK](https://www.balena.io/docs/reference/sdk/python-sdk/) sourced from https://github.com/balena-io/balena-sdk-python/blob/master/DOCUMENTATION.md
+- [CLI](https://docs.balena.io/reference/cli/) sourced from https://github.com/balena-io/balena-cli/blob/master/doc/cli.markdown
+- [Node SDK](https://docs.balena.io/reference/sdk/node-sdk/) sourced from https://github.com/balena-io/balena-sdk/blob/master/DOCUMENTATION.md
+- [Python SDK](https://docs.balena.io/reference/sdk/python-sdk/) sourced from https://github.com/balena-io/balena-sdk-python/blob/master/DOCUMENTATION.md
 
 And more. The updated list of external resources can be found in [tools/fetch-external.sh](https://github.com/balena-io/docs/blob/master/tools/fetch-external.sh)  
 
@@ -111,20 +111,6 @@ Be sure to familiarize yourself with the style manual and conventions to be foll
 - How to write [balena-specific words](README.md#balena-specific-words)
 - [Conventions & Best Practices](README.md#conventions--best-practices)
 - Using [Partials](README.md#using-partials) and [Templates](README.md#using-templates)
-
-## [balenistas only] Using Versionbot to manage the pull request
-
-Versionbot is a helper utility to make managing of the pull request easier. Here's a list of commands supported by VersionBot:
-
-- `@balena-ci I self-certify!` - use [the self-certification flow](https://docs.google.com/drawings/d/1aoXCdi8bzinxaLM0BoKMJaiZjIJj5Az02Npw_L2iQkE/edit?usp=sharing) for this PR
-- `@balena-ci test` - trigger the tests for this PR
-- `@balena-ci retest` - trigger retests for the PR
-- `@balena-ci version` - generate the versioned branch for your PR
-- `@balena-ci rebase` - rebase the PR (Use this to update your branch)
-
-![](https://user-images.githubusercontent.com/22801822/114602349-22fd3d00-9cb4-11eb-905b-721488e64dc6.png)
-
-One can use these commands to manage, rebase or merge their own PR's as and when needed. We recommend using these commands to merge the PR if it's ready to be merged. One can issue the commands in the comments dialog box present at the bottom of the PR. 
 
 
 [reference text]: https://balena.io

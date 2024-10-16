@@ -569,21 +569,21 @@ To re-enable IPv6 follow the same commands but with `set ipv6.method enable`.
 
 <!-- links -->
 
-[nm-setting-ref]:https://developer-old.gnome.org/NetworkManager/stable/ref-settings.html
-[nm-ipv4-setting-ref]:https://developer-old.gnome.org/NetworkManager/stable/settings-ipv4.html
+[nm-setting-ref]:https://www.networkmanager.dev/docs/api/latest/ref-settings.html
+[nm-ipv4-setting-ref]:https://www.networkmanager.dev/docs/api/latest/settings-ipv4.html
 [eduroam-ref]:https://www.eduroam.org
-[nm-gsm-setting-ref]:https://developer-old.gnome.org/NetworkManager/stable/settings-gsm.html
+[nm-gsm-setting-ref]:https://networkmanager.dev/docs/api/latest/settings-gsm.html
 [connman-link]: https://en.wikipedia.org/wiki/ConnMan
-[networkmanager-link]:https://developer-old.gnome.org/NetworkManager/
+[networkmanager-link]:https://www.networkmanager.dev
 [modemmanager-link]:https://www.freedesktop.org/wiki/Software/ModemManager/
 [wifi-connect]:{{ $links.githubOS }}/wifi-connect
 [dbus-link]:https://www.freedesktop.org/wiki/Software/dbus/
 [network-manager-examples]:https://wiki.gnome.org/Projects/NetworkManager/Developers#Show_me_more_examples.21 "NetworkManager: Show me more examples!"
 [redsocks]:https://github.com/darkk/redsocks
 [redsocks-conf-example]:https://github.com/darkk/redsocks/blob/master/redsocks.conf.example
-[python-base-images]:/reference/base-images/base-images/
-[python-build-images]:/reference/base-images/base-images/#run-vs-build
-[nm-connectivity]:https://developer-old.gnome.org/NetworkManager/stable/NetworkManager.conf.html
+[python-base-images]:/reference/base-images/balena-base-images/
+[python-build-images]:/reference/base-images/balena-base-images/#run-vs-build
+[nm-connectivity]:https://networkmanager.dev/docs/api/latest/NetworkManager.conf.html
 [wifi-dongles]:/reference/hardware/wifi-dongles
 [meta-balena-connectivity]:{{ $links.githubOS }}/meta-balena#connectivity
 

@@ -1,4 +1,957 @@
 - commits:
+    - subject: "patch: Remove Husky pre-commit hook"
+      hash: d146c40b636f74cad1b23dddf72eab6a696c6f9b
+      body: ""
+      footer:
+        Signed-off-by: Vipul Gupta (@vipulgupta2048) <vipulgupta2048@gmail.com>
+        signed-off-by: Vipul Gupta (@vipulgupta2048) <vipulgupta2048@gmail.com>
+      author: Vipul Gupta (@vipulgupta2048)
+      nested: []
+  version: 5.73.2
+  title: ""
+  date: 2024-10-16T13:15:42.001Z
+- commits:
+    - subject: "patch: Delete unused links"
+      hash: 4f5642439fb8cb6e79d16d78dfef473f10f1034d
+      body: ""
+      footer:
+        Signed-off-by: Vipul Gupta (@vipulgupta2048) <vipulgupta2048@gmail.com>
+        signed-off-by: Vipul Gupta (@vipulgupta2048) <vipulgupta2048@gmail.com>
+      author: Vipul Gupta (@vipulgupta2048)
+      nested: []
+  version: 5.73.1
+  title: ""
+  date: 2024-10-15T17:30:52.553Z
+- commits:
+    - subject: "API/overview: Group all $filter examples together"
+      hash: 901b9ba4d5e44ac971b88234c4dacc3612557ff9
+      body: ""
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: Thodoris Greasidis
+      nested: []
+    - subject: "API/overview: Add a $filter example for filtering application by their
+        organization's handle"
+      hash: 0ac3b60625d76259f82e85802f40a25d58bc70d2
+      body: ""
+      footer:
+        Change-type: minor
+        change-type: minor
+      author: Thodoris Greasidis
+      nested: []
+    - subject: "API/overview: Change the associated resource $filter example to use
+        $any & apply on the slug field"
+      hash: 419da9b2dcad00ec0a8c8f129509168ae309d726
+      body: |
+        Firstly $any can also be used for filtering using
+        reverse navigation resources as well, while
+        the previous approach works only for FKs.
+        On top of that filtering using $any is also
+        faster.
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: Thodoris Greasidis
+      nested: []
+    - subject: "API/overview: Add the slug property in the application examples"
+      hash: d1aab5d726cc03e16c23a101d2a12c1b263bd38d
+      body: ""
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: Thodoris Greasidis
+      nested: []
+  version: 5.73.0
+  title: ""
+  date: 2024-10-15T15:29:36.602Z
+- commits:
+    - subject: "Management: Remove superscript linking"
+      hash: e709f26a5c86e3f0837ed620b458eb5ab647a49b
+      body: ""
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: Shaun Mulligan
+      nested: []
+    - subject: "Management: quick link fix"
+      hash: 2dfed121247f9e722a8988463548d93a4f7ee1bf
+      body: ""
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: Shaun Mulligan
+      nested: []
+  version: 5.72.1
+  title: ""
+  date: 2024-10-15T09:28:43.142Z
+- commits:
+    - subject: "Management: Update docs for new device statuses and update status"
+      hash: 4c171b49223e0e966fff812a828c02a7fc2040be
+      body: ""
+      footer:
+        Change-type: minor
+        change-type: minor
+      author: Shaun Mulligan
+      nested: []
+  version: 5.72.0
+  title: ""
+  date: 2024-10-15T08:44:21.564Z
+- commits:
+    - subject: 'API/resources: Add a note that "Get all fleets" will also include
+        public fleets'
+      hash: 9d553dc8bbe55296663644ba8505874eefe33c5a
+      body: ""
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: Thodoris Greasidis
+      nested: []
+    - subject: "API/resources: Add an example for retrieving the fleets of a specific
+        organization"
+      hash: b107d10bb0d8733e0452174c0906b304149d8b53
+      body: ""
+      footer:
+        Change-type: minor
+        change-type: minor
+      author: Thodoris Greasidis
+      nested: []
+  version: 5.71.0
+  title: ""
+  date: 2024-10-14T15:08:12.395Z
+- commits:
+    - subject: "patch: add tested modem disclaimer"
+      hash: 3c72cc65d9c1fa8644e93b727762c15e2bffb599
+      body: ""
+      footer: {}
+      author: rmorillo24
+      nested: []
+  version: 5.70.2
+  title: ""
+  date: 2024-10-11T08:58:00.101Z
+- commits:
+    - subject: "patch: Ensure which jq is used in base-images script"
+      hash: 052ff4da2543b38b6c36a942bbd8b5cd907cf081
+      body: ""
+      footer:
+        Signed-off-by: Vipul Gupta (@vipulgupta2048) <vipulgupta2048@gmail.com>
+        signed-off-by: Vipul Gupta (@vipulgupta2048) <vipulgupta2048@gmail.com>
+      author: Vipul Gupta (@vipulgupta2048)
+      nested: []
+  version: 5.70.1
+  title: ""
+  date: 2024-10-11T06:13:02.237Z
+- commits:
+    - subject: Add section `Trust and Transparency` to the Security Page
+      hash: 9f8020a83b7d34fd69882be05b7ee3b415bcd20c
+      body: |
+        Link to our trust center at `trust.balena.io`
+      footer:
+        Change-type: minor
+        change-type: minor
+        Signed-off-by: fisehara <harald@balena.io>
+        signed-off-by: fisehara <harald@balena.io>
+      author: fisehara
+      nested: []
+  version: 5.70.0
+  title: ""
+  date: 2024-10-11T05:27:35.854Z
+- commits:
+    - subject: "API/overview: Add a $expand example from the application to its device
+        type"
+      hash: cc747e82e1fd60fc8e0476f1ab4bafe4935e805a
+      body: ""
+      footer:
+        Change-type: minor
+        change-type: minor
+      author: Thodoris Greasidis
+      nested: []
+    - subject: "API/overview: Replace the application.device_type property with
+        is_for__device_type since it's not in the v6 model"
+      hash: eac74ae2285ad48bc7c4dafbfeafaa68ab390a7a
+      body: ""
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: Thodoris Greasidis
+      nested: []
+  version: 5.69.0
+  title: ""
+  date: 2024-10-09T07:12:11.449Z
+- commits:
+    - subject: Fix SAML docs use `auth` prefix on SAML urls
+      hash: 9bdee7c200eee5771b5805d99d4b5d5f3a410019
+      body: ""
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: Otavio Jacobi
+      nested: []
+  version: 5.68.7
+  title: ""
+  date: 2024-10-09T00:10:50.467Z
+- commits:
+    - subject: Fix google workspace docs for saml
+      hash: 3f8b615ebd2d216607b7948715c8b4eedf94777c
+      body: ""
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: Otavio Jacobi
+      nested: []
+  version: 5.68.6
+  title: ""
+  date: 2024-10-08T23:26:30.923Z
+- commits:
+    - subject: "patch: state that SAML is available to all standard paid plans"
+      hash: 5eca22885452bb5e1c3202e7cf91c24aa628516b
+      body: ""
+      footer: {}
+      author: Ross Porter
+      nested: []
+  version: 5.68.5
+  title: ""
+  date: 2024-10-07T17:18:23.268Z
+- commits:
+    - subject: "patch: Security - Update ARM builders hosting details"
+      hash: 30aa5890a537658cdff4e755ed838af66402a49f
+      body: ""
+      footer:
+        Signed-off-by: Vipul Gupta (@vipulgupta2048) <vipulgupta2048@gmail.com>
+        signed-off-by: Vipul Gupta (@vipulgupta2048) <vipulgupta2048@gmail.com>
+      author: Vipul Gupta (@vipulgupta2048)
+      nested: []
+  version: 5.68.4
+  title: ""
+  date: 2024-10-07T13:01:31.572Z
+- commits:
+    - subject: "CI: Update checkout settings"
+      hash: 0240f2c2ccf23189c9736924486ef76498858653
+      body: ""
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: Pagan Gazzard
+      nested: []
+  version: 5.68.3
+  title: ""
+  date: 2024-09-26T12:44:37.018Z
+- commits:
+    - subject: "patch: Add default FAQ redirect for troubleshooting"
+      hash: 9f83b94a99a867f67fdbce06b9ec28f9a997094e
+      body: ""
+      footer:
+        Signed-off-by: Vipul Gupta (@vipulgupta2048) <vipulgupta2048@gmail.com>
+        signed-off-by: Vipul Gupta (@vipulgupta2048) <vipulgupta2048@gmail.com>
+      author: Vipul Gupta (@vipulgupta2048)
+      nested: []
+  version: 5.68.2
+  title: ""
+  date: 2024-09-17T11:54:56.736Z
+- commits:
+    - subject: "patch: Fix FAQ questions page in navigation sidebar"
+      hash: 601bbd6207282f3c78207e4dbb774429ffbc52a7
+      body: ""
+      footer:
+        Signed-off-by: Vipul Gupta (@vipulgupta2048) <vipulgupta2048@gmail.com>
+        signed-off-by: Vipul Gupta (@vipulgupta2048) <vipulgupta2048@gmail.com>
+      author: Vipul Gupta (@vipulgupta2048)
+      nested: []
+  version: 5.68.1
+  title: ""
+  date: 2024-09-16T16:39:55.362Z
+- commits:
+    - subject: "API/resources: Retrieve the service name as part of the device service
+        env var GET requests"
+      hash: f73c52512a22423fe72ac1c5bad6687d74938230
+      body: ""
+      footer:
+        Change-type: minor
+        change-type: minor
+      author: Thodoris Greasidis
+      nested: []
+    - subject: "API/resources: Fix the html id for the device service env vars by
+        device UUID request"
+      hash: 3808d2267036d829c4e5d6537d8385d92d4d00fc
+      body: ""
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: Thodoris Greasidis
+      nested: []
+  version: 5.68.0
+  title: ""
+  date: 2024-09-02T10:14:37.796Z
+- commits:
+    - subject: "API/resources: Add docs on how to retrieve device service env vars by
+        device UUID"
+      hash: 2b3e0dc18c50d5127953e29d7d71e50bc9ede540
+      body: ""
+      footer:
+        Change-type: minor
+        change-type: minor
+      author: Thodoris Greasidis
+      nested: []
+    - subject: "API/resources: Add docs on how to retrieve device env vars by device
+        UUID"
+      hash: b882685df2e4eeb411ef2c6a972741316d5f123e
+      body: ""
+      footer:
+        Change-type: minor
+        change-type: minor
+      author: Thodoris Greasidis
+      nested: []
+  version: 5.67.0
+  title: ""
+  date: 2024-09-02T09:13:50.900Z
+- commits:
+    - subject: "patch: Remove balena suffix from configurations list"
+      hash: 3833eb3865ac5cdce919b7c42b13e1ffad4434ea
+      body: ""
+      footer: {}
+      author: Vipul Gupta
+      nested: []
+  version: 5.66.16
+  title: ""
+  date: 2024-08-26T19:48:22.711Z
+- commits:
+    - subject: "patch: Reduce title text to 70 characters"
+      hash: 55052d16058542b435910cfd5ebd254da698c689
+      body: ""
+      footer:
+        Signed-off-by: Vipul Gupta (@vipulgupta2048) <vipulgupta2048@gmail.com>
+        signed-off-by: Vipul Gupta (@vipulgupta2048) <vipulgupta2048@gmail.com>
+      author: Vipul Gupta (@vipulgupta2048)
+      nested: []
+  version: 5.66.15
+  title: ""
+  date: 2024-08-26T12:49:10.917Z
+- commits:
+    - subject: "patch: Rename base-images.md to balena-base-images.md"
+      hash: c104fc071026a3d5c62706dc150b4b7be3e8519b
+      body: ""
+      footer:
+        Signed-off-by: Vipul Gupta (@vipulgupta2048) <vipulgupta2048@gmail.com>
+        signed-off-by: Vipul Gupta (@vipulgupta2048) <vipulgupta2048@gmail.com>
+      author: Vipul Gupta (@vipulgupta2048)
+      nested: []
+  version: 5.66.14
+  title: ""
+  date: 2024-08-22T21:05:46.296Z
+- commits:
+    - subject: "patch: Move pages from /faq/troubleshooting to /faq/"
+      hash: c5626e0a50e054b111448157303830adf501eafc
+      body: ""
+      footer:
+        Signed-off-by: Vipul Gupta (@vipulgupta2048) <vipulgupta2048@gmail.com>
+        signed-off-by: Vipul Gupta (@vipulgupta2048) <vipulgupta2048@gmail.com>
+      author: Vipul Gupta (@vipulgupta2048)
+      nested: []
+  version: 5.66.13
+  title: ""
+  date: 2024-08-22T18:16:58.304Z
+- commits:
+    - subject: "patch: Add _headers file"
+      hash: 4103354ea57d914ab9206d1f1714080b77de07bc
+      body: ""
+      footer:
+        Signed-off-by: Vipul Gupta (@vipulgupta2048) <vipulgupta2048@gmail.com>
+        signed-off-by: Vipul Gupta (@vipulgupta2048) <vipulgupta2048@gmail.com>
+      author: Vipul Gupta (@vipulgupta2048)
+      nested: []
+  version: 5.66.12
+  title: ""
+  date: 2024-08-22T10:19:05.446Z
+- commits:
+    - subject: Add additional container contracts info
+      hash: a9b179bac95e78784e6a97662a2e659d1fb5a9ee
+      body: ""
+      footer:
+        Change-type: patch
+        change-type: patch
+        Signed-off-by: Chris Crocker-White <chriscw@balena.io>
+        signed-off-by: Chris Crocker-White <chriscw@balena.io>
+      author: Chris Crocker-White
+      nested: []
+  version: 5.66.11
+  title: ""
+  date: 2024-08-20T15:27:18.636Z
+- commits:
+    - subject: "patch: Add base-images-ref docs from base-images repository"
+      hash: 7f88f79916bb6c67b79d9462d2657163ea4ab3eb
+      body: ""
+      footer:
+        Signed-off-by: Vipul Gupta (@vipulgupta2048) <vipulgupta2048@gmail.com>
+        signed-off-by: Vipul Gupta (@vipulgupta2048) <vipulgupta2048@gmail.com>
+      author: Vipul Gupta (@vipulgupta2048)
+      nested: []
+  version: 5.66.10
+  title: ""
+  date: 2024-08-14T16:37:02.962Z
+- commits:
+    - subject: "patch: Generate base images stack versions automatically"
+      hash: dd07dea3ee6c7f04e7817c711558db211227e105
+      body: ""
+      footer:
+        Signed-off-by: Vipul Gupta (@vipulgupta2048) <vipulgupta2048@gmail.com>
+        signed-off-by: Vipul Gupta (@vipulgupta2048) <vipulgupta2048@gmail.com>
+      author: Vipul Gupta (@vipulgupta2048)
+      nested: []
+  version: 5.66.9
+  title: ""
+  date: 2024-08-13T12:40:08.197Z
+- commits:
+    - subject: "patch: Add Husky pre-commit: Convert all images to Webp"
+      hash: e1e82a14fe70d82e508fb1d2e63dd80ea41f26a8
+      body: ""
+      footer:
+        Signed-off-by: Vipul Gupta (@vipulgupta2048) <vipulgupta2048@gmail.com>
+        signed-off-by: Vipul Gupta (@vipulgupta2048) <vipulgupta2048@gmail.com>
+      author: Vipul Gupta (@vipulgupta2048)
+      nested: []
+  version: 5.66.8
+  title: ""
+  date: 2024-08-07T12:54:28.244Z
+- commits:
+    - subject: "patch: Convert all images to Webp format"
+      hash: 4205644fc361013c0b26c6edc3268843d40e8099
+      body: |
+        Converted using convert-images-to-webp.sh script with 90 Quality
+      footer:
+        Signed-off-by: Vipul Gupta (@vipulgupta2048) <vipulgupta2048@gmail.com>
+        signed-off-by: Vipul Gupta (@vipulgupta2048) <vipulgupta2048@gmail.com>
+      author: Vipul Gupta (@vipulgupta2048)
+      nested: []
+  version: 5.66.7
+  title: ""
+  date: 2024-08-06T13:43:26.021Z
+- commits:
+    - subject: "patch: Check links on staging deployments"
+      hash: 91a24f6d04332d1f9740640eee9fa12bdb00ac36
+      body: ""
+      footer:
+        Signed-off-by: Vipul Gupta (@vipulgupta2048) <vipulgupta2048@gmail.com>
+        signed-off-by: Vipul Gupta (@vipulgupta2048) <vipulgupta2048@gmail.com>
+      author: Vipul Gupta (@vipulgupta2048)
+      nested: []
+  version: 5.66.6
+  title: ""
+  date: 2024-07-31T23:32:52.542Z
+- commits:
+    - subject: "patch: Fix broken links"
+      hash: fc96c3003c745f7fa6da65ddc5b4b6d5b5b7bf3a
+      body: ""
+      footer:
+        Signed-off-by: Vipul Gupta (@vipulgupta2048) <vipulgupta2048@gmail.com>
+        signed-off-by: Vipul Gupta (@vipulgupta2048) <vipulgupta2048@gmail.com>
+      author: Vipul Gupta (@vipulgupta2048)
+      nested: []
+  version: 5.66.5
+  title: ""
+  date: 2024-07-25T09:43:09.875Z
+- commits:
+    - subject: Update introduction.md
+      hash: 35b2007635b03196bba13f487789fecbb7c517a5
+      body: |
+        Update roadmap to feature requests
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: Jasmine Gilbert
+      nested: []
+  version: 5.66.4
+  title: ""
+  date: 2024-07-22T11:01:05.003Z
+- commits:
+    - subject: Add a note on experimental feature flag to the apps documentation
+      hash: ee195ef740f5386183dda6a2db89a2902603ca37
+      body: ""
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: Jonathan Berger
+      nested: []
+  version: 5.66.3
+  title: ""
+  date: 2024-07-15T19:15:49.515Z
+- commits:
+    - subject: "patch: Fix broken links after accounts section"
+      hash: 45708bebba56f20a757c0bd15999e0dd5f3a5e92
+      body: ""
+      footer:
+        Signed-off-by: Vipul Gupta (@vipulgupta2048) <vipulgupta2048@gmail.com>
+        signed-off-by: Vipul Gupta (@vipulgupta2048) <vipulgupta2048@gmail.com>
+      author: Vipul Gupta (@vipulgupta2048)
+      nested: []
+  version: 5.66.2
+  title: ""
+  date: 2024-07-15T11:01:25.592Z
+- commits:
+    - subject: Minor improvements to Enterprise SSO section
+      hash: 03feae9f767af84d689a5dc27e679432399d8280
+      body: ""
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: dfunckt
+      nested: []
+  version: 5.66.1
+  title: ""
+  date: 2024-07-12T12:11:41.101Z
+- commits:
+    - subject: Update MS entra screenshots
+      hash: dbb70ffc4a708f37716ca159fb3ae64a75533eea
+      body: ""
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: Shaun Mulligan
+      nested: []
+    - subject: Fix login page doc image
+      hash: eba7406cba84106a4eb2b682a5b939ae5cdc4639
+      body: ""
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: Otavio Jacobi
+      nested: []
+    - subject: initial draft of SAML docs
+      hash: 94d0bf4ef59fd21a35324a8ed3ba14515bcf4c9a
+      body: ""
+      footer:
+        Change-type: minor
+        change-type: minor
+      author: Shaun Mulligan
+      nested: []
+  version: 5.66.0
+  title: ""
+  date: 2024-07-10T15:28:31.197Z
+- commits:
+    - subject: Fix a typo in introduction.md
+      hash: cb33138b70e46f6299469fb4fa65061a2db4fa0d
+      body: ""
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: Jonathan Berger
+      nested: []
+  version: 5.65.2
+  title: ""
+  date: 2024-07-01T09:44:07.758Z
+- commits:
+    - subject: "patch: Update NPM dependencies"
+      hash: 237d8bb91cdf2110afbe94fbf0ec7bd216a6e99d
+      body: ""
+      footer:
+        Signed-off-by: Vipul Gupta (@vipulgupta2048) <vipulgupta2048@gmail.com>
+        signed-off-by: Vipul Gupta (@vipulgupta2048) <vipulgupta2048@gmail.com>
+      author: Vipul Gupta (@vipulgupta2048)
+      nested: []
+  version: 5.65.1
+  title: ""
+  date: 2024-06-27T14:20:25.713Z
+- commits:
+    - subject: "minor: Add Accounts & Billing section"
+      hash: b792e3e448dc601e979bba4a9a33f64841d87021
+      body: ""
+      footer:
+        Signed-off-by: Vipul Gupta (@vipulgupta2048) <vipulgupta2048@gmail.com>
+        signed-off-by: Vipul Gupta (@vipulgupta2048) <vipulgupta2048@gmail.com>
+      author: Vipul Gupta (@vipulgupta2048)
+      nested: []
+  version: 5.65.0
+  title: ""
+  date: 2024-06-26T12:08:56.512Z
+- commits:
+    - subject: "patch: Update NPM dependencies"
+      hash: f7e4fea64d5c57643c131988145f8a705ced2670
+      body: ""
+      footer:
+        Signed-off-by: Vipul Gupta (@vipulgupta2048) <vipulgupta2048@gmail.com>
+        signed-off-by: Vipul Gupta (@vipulgupta2048) <vipulgupta2048@gmail.com>
+      author: Vipul Gupta (@vipulgupta2048)
+      nested: []
+  version: 5.64.2
+  title: ""
+  date: 2024-06-14T08:22:33.937Z
+- commits:
+    - subject: Change overview to point at v6 rather than v5
+      hash: a812f486b0c4281080cd43de72b5cf4133dc388d
+      body: ""
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: Pagan Gazzard
+      nested: []
+  version: 5.64.1
+  title: ""
+  date: 2024-05-23T15:52:15.257Z
+- commits:
+    - subject: "Configuration: Add section about overriding the splash logo"
+      hash: 20e9c38308402c61b5b97ff5bb2fd42db11d53f9
+      body: ""
+      footer:
+        Change-type: minor
+        change-type: minor
+      author: myarmolinsky
+      nested: []
+  version: 5.64.0
+  title: ""
+  date: 2024-05-23T14:31:47.021Z
+- commits:
+    - subject: Remove outdated references to versionbot
+      hash: 877566f7eed3104e24a8c96325403b6943bc5eb9
+      body: ""
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: Pagan Gazzard
+      nested: []
+  version: 5.63.4
+  title: ""
+  date: 2024-05-23T10:15:00.928Z
+- commits:
+    - subject: Steer users towards to key format for OData resources over filters
+      hash: fbb7a4660c113fe7a697a24c07cbb098c2245482
+      body: ""
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: Pagan Gazzard
+      nested: []
+  version: 5.63.3
+  title: ""
+  date: 2024-05-23T09:58:37.744Z
+- commits:
+    - subject: "patch: Update network-manager links from developer-old.gnome.org"
+      hash: 1c0b4fd312a5cc2bfe4fb7896f0fe51708b69770
+      body: ""
+      footer:
+        Signed-off-by: Vipul Gupta (@vipulgupta2048) <vipulgupta2048@gmail.com>
+        signed-off-by: Vipul Gupta (@vipulgupta2048) <vipulgupta2048@gmail.com>
+      author: Vipul Gupta (@vipulgupta2048)
+      nested: []
+  version: 5.63.2
+  title: ""
+  date: 2024-05-14T13:03:41.470Z
+- commits:
+    - subject: "patch: Update Balena Base Images 404 links"
+      hash: c178916d59a160fa7b267d03d0abfaf3221e2131
+      body: ""
+      footer:
+        Signed-off-by: Vipul Gupta (@vipulgupta2048) <vipulgupta2048@gmail.com>
+        signed-off-by: Vipul Gupta (@vipulgupta2048) <vipulgupta2048@gmail.com>
+      author: Vipul Gupta (@vipulgupta2048)
+      nested: []
+  version: 5.63.1
+  title: ""
+  date: 2024-05-06T15:07:09.385Z
+- commits:
+    - subject: "API/Resources: Add docs updating the supervisor of a device"
+      hash: c1bb917467dc631c9e420eb5386cf4df69fde8f6
+      body: ""
+      footer:
+        Change-type: minor
+        change-type: minor
+      author: Thodoris Greasidis
+      nested: []
+    - subject: "API/Resources: Add docs for retrieving a specific `supervisor release`"
+      hash: 7d8e64d25d0a841ca0a56d6e1077937d184f782c
+      body: ""
+      footer:
+        Change-type: minor
+        change-type: minor
+      author: Thodoris Greasidis
+      nested: []
+    - subject: "API/Resources: Fix the docs for the `supervisor release` resource"
+      hash: 2d1c23b2a4a645cda9b98797f32bfbf45f1ef7da
+      body: ""
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: Thodoris Greasidis
+      nested: []
+  version: 5.63.0
+  title: ""
+  date: 2024-05-03T14:08:36.160Z
+- commits:
+    - subject: "patch: Update lychee to v1.10"
+      hash: 314b22115deec6fc41c89e11ae87aabbb5f410e1
+      body: ""
+      footer:
+        Signed-off-by: Vipul Gupta (@vipulgupta2048) <vipulgupta2048@gmail.com>
+        signed-off-by: Vipul Gupta (@vipulgupta2048) <vipulgupta2048@gmail.com>
+      author: Vipul Gupta (@vipulgupta2048)
+      nested: []
+  version: 5.62.8
+  title: ""
+  date: 2024-05-01T11:21:12.840Z
+- commits:
+    - subject: "patch: Add node v20 as supported version"
+      hash: 325ba1a055a3fa234e097c9e5b17ff73d2a832b2
+      body: Add node v20 as supported version and change node versions to reflect what
+        nodejs contract currently builds
+      footer: {}
+      author: Nikolaos Grigoropoulos
+      nested: []
+  version: 5.62.7
+  title: ""
+  date: 2024-04-24T08:00:32.598Z
+- commits:
+    - subject: "patch: Update upgrade instructions for BalenaOS"
+      hash: b453a06fb4cc4c4104edb67c926a5e191caf9e08
+      body: ""
+      footer:
+        Signed-off-by: Vipul Gupta (@vipulgupta2048) <vipulgupta2048@gmail.com>
+        signed-off-by: Vipul Gupta (@vipulgupta2048) <vipulgupta2048@gmail.com>
+      author: Vipul Gupta (@vipulgupta2048)
+      nested: []
+    - subject: "patch: Update upgrade instructions for Supervisor"
+      hash: efa23c1a8ba58e8d7c7db5b9bfae29eb4805de97
+      body: ""
+      footer:
+        Signed-off-by: Vipul Gupta (@vipulgupta2048) <vipulgupta2048@gmail.com>
+        signed-off-by: Vipul Gupta (@vipulgupta2048) <vipulgupta2048@gmail.com>
+      author: Vipul Gupta (@vipulgupta2048)
+      nested: []
+  version: 5.62.6
+  title: ""
+  date: 2024-04-09T08:54:34.514Z
+- commits:
+    - subject: "patch: Provide GitHub Token to lychee action"
+      hash: 1074c4ab3c7e766b22e937161f71bb34cdae2d19
+      body: ""
+      footer: {}
+      author: Vipul Gupta
+      nested: []
+  version: 5.62.5
+  title: ""
+  date: 2024-04-09T08:25:11.438Z
+- commits:
+    - subject: "patch: Add double quotes for accept status codes"
+      hash: a1bbc2044286a312f41ec035899831f6fe7c2d14
+      body: ""
+      footer:
+        Signed-off-by: Vipul Gupta (@vipulgupta2048) <vipulgupta2048@gmail.com>
+        signed-off-by: Vipul Gupta (@vipulgupta2048) <vipulgupta2048@gmail.com>
+      author: Vipul Gupta (@vipulgupta2048)
+      nested: []
+  version: 5.62.4
+  title: ""
+  date: 2024-04-04T14:14:45.648Z
+- commits:
+    - subject: "patch: Add Diagnostics headings to navigation sidebar"
+      hash: 8c43d33fe2c9f0cd824d816a8b6fbcf522157251
+      body: ""
+      footer:
+        Signed-off-by: Vipul Gupta (@vipulgupta2048) <vipulgupta2048@gmail.com>
+        signed-off-by: Vipul Gupta (@vipulgupta2048) <vipulgupta2048@gmail.com>
+      author: Vipul Gupta (@vipulgupta2048)
+      nested: []
+  version: 5.62.3
+  title: ""
+  date: 2024-03-26T18:59:44.358Z
+- commits:
+    - subject: "patch: No longer need to pull diagnosis docs"
+      hash: afcfc7991ca688582739d3b8bb028ba983c05bb9
+      body: ""
+      footer:
+        Signed-off-by: Vipul Gupta (@vipulgupta2048) <vipulgupta2048@gmail.com>
+        signed-off-by: Vipul Gupta (@vipulgupta2048) <vipulgupta2048@gmail.com>
+      author: Vipul Gupta (@vipulgupta2048)
+      nested: []
+  version: 5.62.2
+  title: ""
+  date: 2024-03-22T20:11:58.542Z
+- commits:
+    - subject: "patch: Fix Supervisor Configuration list"
+      hash: bf3ec3235b962ebef5d3486d1cb6c87fe52be930
+      body: ""
+      footer:
+        Signed-off-by: Vipul Gupta (@vipulgupta2048) <vipulgupta2048@gmail.com>
+        signed-off-by: Vipul Gupta (@vipulgupta2048) <vipulgupta2048@gmail.com>
+      author: Vipul Gupta (@vipulgupta2048)
+      nested: []
+  version: 5.62.1
+  title: ""
+  date: 2024-03-20T14:31:05.215Z
+- commits:
+    - subject: "API/Resources: Add docs listing the balenaOS versions of a device type"
+      hash: 5e9e2ec1773bd568ba4dbf3b9602e5783aa2917a
+      body: ""
+      footer:
+        Change-type: minor
+        change-type: minor
+        See: https://balena.zulipchat.com/#narrow/stream/345889-balena-io.2Fos/topic/Determine.20list.20of.20supported.20OS.28hostapp.29.20for.20a.20device-type/near/421801181
+        see: https://balena.zulipchat.com/#narrow/stream/345889-balena-io.2Fos/topic/Determine.20list.20of.20supported.20OS.28hostapp.29.20for.20a.20device-type/near/421801181
+      author: Thodoris Greasidis
+      nested: []
+  version: 5.62.0
+  title: ""
+  date: 2024-03-14T16:31:10.632Z
+- commits:
+    - subject: "patch: Add token input to lychee action"
+      hash: e8a797b95edda000014c5809e74c02f1dbe0f7fc
+      body: ""
+      footer:
+        Signed-off-by: Vipul Gupta (@vipulgupta2048) <vipulgupta2048@gmail.com>
+        signed-off-by: Vipul Gupta (@vipulgupta2048) <vipulgupta2048@gmail.com>
+      author: Vipul Gupta (@vipulgupta2048)
+      nested: []
+  version: 5.61.7
+  title: ""
+  date: 2024-03-11T10:52:46.714Z
+- commits:
+    - subject: "patch: Add Google Tag Manager url to ignore list"
+      hash: 26ce21e4c812a2ea6fa702c16de8750ad853d6bc
+      body: ""
+      footer:
+        Signed-off-by: Vipul Gupta (@vipulgupta2048) <vipulgupta2048@gmail.com>
+        signed-off-by: Vipul Gupta (@vipulgupta2048) <vipulgupta2048@gmail.com>
+      author: Vipul Gupta (@vipulgupta2048)
+      nested: []
+  version: 5.61.6
+  title: ""
+  date: 2024-03-06T21:02:33.266Z
+- commits:
+    - subject: "patch: Improve Whatyouneed section in Getting Started"
+      hash: 6d3b8757e92d2b44fb5deddbec41fe4f55f37997
+      body: ""
+      footer:
+        Signed-off-by: Vipul Gupta (@vipulgupta2048) <vipulgupta2048@gmail.com>
+        signed-off-by: Vipul Gupta (@vipulgupta2048) <vipulgupta2048@gmail.com>
+      author: Vipul Gupta (@vipulgupta2048)
+      nested: []
+  version: 5.61.5
+  title: ""
+  date: 2024-02-28T20:48:38.981Z
+- commits:
+    - subject: "Clarify global dtparams: should have own set of double quotes"
+      hash: 6a1ce8945c30c89cc04f6ccbcd738a73bf0a70a2
+      body: ""
+      footer:
+        Change-type: patch
+        change-type: patch
+        Signed-off-by: Christina Ying Wang <christina@balena.io>
+        signed-off-by: Christina Ying Wang <christina@balena.io>
+      author: Christina Ying Wang
+      nested: []
+  version: 5.61.4
+  title: ""
+  date: 2024-02-22T00:44:28.791Z
+- commits:
+    - subject: "patch: Add Diagnostics section as subpages in docs"
+      hash: f8822c8399e06ab90c6ca589bfe8458317d9f2ef
+      body: ""
+      footer:
+        Signed-off-by: Vipul Gupta (@vipulgupta2048) <vipulgupta2048@gmail.com>
+        signed-off-by: Vipul Gupta (@vipulgupta2048) <vipulgupta2048@gmail.com>
+      author: Vipul Gupta (@vipulgupta2048)
+      nested: []
+  version: 5.61.3
+  title: ""
+  date: 2024-02-21T14:06:28.550Z
+- commits:
+    - subject: "patch: Update publish step in Cloudflare Action"
+      hash: 9cf1136e1d0785bd710e64a7dfeaeebe843859dc
+      body: ""
+      footer:
+        Signed-off-by: Vipul Gupta (@vipulgupta2048) <vipulgupta2048@gmail.com>
+        signed-off-by: Vipul Gupta (@vipulgupta2048) <vipulgupta2048@gmail.com>
+      author: Vipul Gupta (@vipulgupta2048)
+      nested: []
+  version: 5.61.2
+  title: ""
+  date: 2024-02-21T13:55:45.894Z
+- commits:
+    - subject: Update config.txt to reflect changes in config.txt parsing with
+        Supervisor v16+
+      hash: fdf114717966eac078d030aff1ca3f67eecf30a8
+      body: |
+        Supervisor v16+ adds each dtparam for a dtoverlay on its own line to
+        comply with the 80-char line limit for config.txt.
+      footer:
+        Change-type: patch
+        change-type: patch
+        Signed-off-by: Christina Ying Wang <christina@balena.io>
+        signed-off-by: Christina Ying Wang <christina@balena.io>
+      author: Christina Ying Wang
+      nested: []
+  version: 5.61.1
+  title: ""
+  date: 2024-02-19T21:51:13.308Z
+- commits:
+    - subject: "API/Resources: Add docs for the `device type` resource"
+      hash: 30b79c4994a3619b017b196de7b065b06ba46aa1
+      body: ""
+      footer:
+        Change-type: minor
+        change-type: minor
+      author: Thodoris Greasidis
+      nested: []
+  version: 5.61.0
+  title: ""
+  date: 2024-02-19T18:24:27.690Z
+- commits:
+    - subject: "patch: Add Subresource Integrity to scripts being fetched"
+      hash: 107bd7b8937741bfbca70313c93fa605299cd5f0
+      body: ""
+      footer:
+        Signed-off-by: Vipul Gupta (@vipulgupta2048) <vipulgupta2048@gmail.com>
+        signed-off-by: Vipul Gupta (@vipulgupta2048) <vipulgupta2048@gmail.com>
+      author: Vipul Gupta (@vipulgupta2048)
+      nested: []
+  version: 5.60.3
+  title: ""
+  date: 2024-02-19T10:45:59.766Z
+- commits:
+    - subject: "patch: Update GitHub Action dependencies"
+      hash: 7ae1c1319495fcfb44fac71fd8e77522b52d738a
+      body: ""
+      footer:
+        Signed-off-by: Vipul Gupta (@vipulgupta2048) <vipulgupta2048@gmail.com>
+        signed-off-by: Vipul Gupta (@vipulgupta2048) <vipulgupta2048@gmail.com>
+      author: Vipul Gupta (@vipulgupta2048)
+      nested: []
+    - subject: "patch: Update NPM dependencies"
+      hash: 3c927f87e65aaf2f5551038d6e82337841115418
+      body: ""
+      footer:
+        Signed-off-by: Vipul Gupta (@vipulgupta2048) <vipulgupta2048@gmail.com>
+        signed-off-by: Vipul Gupta (@vipulgupta2048) <vipulgupta2048@gmail.com>
+      author: Vipul Gupta (@vipulgupta2048)
+      nested: []
+  version: 5.60.2
+  title: ""
+  date: 2024-02-16T13:06:48.643Z
+- commits:
+    - subject: "i2c-and-spi: Add more Jetson information"
+      hash: 53f37d3070fbd118fcbb3eea420a62c5c796c35d
+      body: |
+        ... about container packages and custom carrier boards.
+      footer:
+        Change-type: patch
+        change-type: patch
+        Signed-off-by: Alexandru Costache <alexandru@balena.io>
+        signed-off-by: Alexandru Costache <alexandru@balena.io>
+      author: Alexandru
+      nested: []
+  version: 5.60.1
+  title: ""
+  date: 2024-02-14T11:09:32.215Z
+- commits:
+    - subject: "minor: Add Cookie Consent Dialog box"
+      hash: 7b83f3cd5415ae42c07338e83cfdeeae944ca2c5
+      body: ""
+      footer:
+        Signed-off-by: Vipul Gupta (@vipulgupta2048) <vipulgupta2048@gmail.com>
+        signed-off-by: Vipul Gupta (@vipulgupta2048) <vipulgupta2048@gmail.com>
+      author: Vipul Gupta (@vipulgupta2048)
+      nested: []
+  version: 5.60.0
+  title: ""
+  date: 2024-02-12T13:45:02.636Z
+- commits:
     - subject: Add Troubleshooting section for `This is the wrong balena device` error
       hash: 05db89f7faf27532164002cd7493b2de445851b1
       body: ""
@@ -1963,7 +2916,8 @@
 
         - [Release notes](https://github.com/lycheeverse/lychee-action/releases)
 
-        - [Commits](https://github.com/lycheeverse/lychee-action/compare/v1.5.0...v1.5.1)
+        -
+        [Commits](https://github.com/lycheeverse/lychee-action/compare/v1.5.0...v1.5.1)
 
         ---
 
@@ -2318,7 +3272,8 @@
 
         - [Release notes](https://github.com/balena-io/doxx/releases)
 
-        - [Changelog](https://github.com/balena-io/doxx/blob/master/CHANGELOG.md)
+        -
+        [Changelog](https://github.com/balena-io/doxx/blob/master/CHANGELOG.md)
 
         - [Commits](https://github.com/balena-io/doxx/compare/v1.0.0...v1.0.1)
 
@@ -2558,7 +3513,8 @@
 
         - [Release notes](https://github.com/actions/checkout/releases)
 
-        - [Changelog](https://github.com/actions/checkout/blob/main/CHANGELOG.md)
+        -
+        [Changelog](https://github.com/actions/checkout/blob/main/CHANGELOG.md)
 
         - [Commits](https://github.com/actions/checkout/compare/v2...v3)
 
@@ -2725,7 +3681,8 @@
 
         - [Release notes](https://github.com/lycheeverse/lychee-action/releases)
 
-        - [Commits](https://github.com/lycheeverse/lychee-action/compare/v1.3.0...v1.4.1
+        -
+        [Commits](https://github.com/lycheeverse/lychee-action/compare/v1.3.0...v1.4.1
       footers:
         signed-off-by: dependabot[bot] <support@github.com>
       hash: fb43246e86b3bd12f0aa0d2ba7f2fe7066f2dfab
@@ -2739,9 +3696,11 @@
         [peter-evans/create-issue-from-file](https://github.com/peter-evans/create-issue-from-file)
         from 3 to 4.
 
-        - [Release notes](https://github.com/peter-evans/create-issue-from-file/releases)
+        - [Release
+        notes](https://github.com/peter-evans/create-issue-from-file/releases)
 
-        - [Commits](https://github.com/peter-evans/create-issue-from-file/compare/v3...v4)
+        -
+        [Commits](https://github.com/peter-evans/create-issue-from-file/compare/v3...v4)
 
         ---
 
@@ -2809,7 +3768,8 @@
 
         - [Release notes](https://github.com/actions/checkout/releases)
 
-        - [Changelog](https://github.com/actions/checkout/blob/main/CHANGELOG.md)
+        -
+        [Changelog](https://github.com/actions/checkout/blob/main/CHANGELOG.md)
 
         - [Commits](https://github.com/actions/checkout/compare/v2...v3)
 
@@ -3115,7 +4075,8 @@
 
         - Add page to the /reference/supervisor section
 
-        - Redirected to raspberrypi3's configuration list as the default device type
+        - Redirected to raspberrypi3's configuration list as the default device
+        type
       footers:
         signed-off-by: Vipul Gupta (@vipulgupta2048) <vipul@balena.io>
       hash: 12ea232993fbe35e721f6bf3df0a24bc272ffb5b
@@ -3194,7 +4155,8 @@
 
         - [Release notes](https://github.com/lycheeverse/lychee-action/releases)
 
-        - [Commits](https://github.com/lycheeverse/lychee-action/compare/v1.1.1...v1.2.0)
+        -
+        [Commits](https://github.com/lycheeverse/lychee-action/compare/v1.1.1...v1.2.0)
 
         ---
 
@@ -3448,7 +4410,8 @@
 
         - [Release notes](https://github.com/webpack/webpack/releases)
 
-        - [Commits](https://github.com/webpack/webpack/compare/v5.51.1...v5.52.0)
+        -
+        [Commits](https://github.com/webpack/webpack/compare/v5.51.1...v5.52.0)
 
         ---
 
@@ -3515,7 +4478,8 @@
       body: >-
         Occasionally users try to use fields that are supported by v2 but have
 
-        different properties in version >=2.2 (like long syntax for ports/volumes) and
+        different properties in version >=2.2 (like long syntax for
+        ports/volumes) and
 
         are surprised to get an error in response.
 
@@ -3593,9 +4557,11 @@
 
         - [Release notes](https://github.com/highlightjs/highlight.js/releases)
 
-        - [Changelog](https://github.com/highlightjs/highlight.js/blob/10.7.3/CHANGES.md)
+        -
+        [Changelog](https://github.com/highlightjs/highlight.js/blob/10.7.3/CHANGES.md)
 
-        - [Commits](https://github.com/highlightjs/highlight.js/compare/10.7.1...10.7.3)
+        -
+        [Commits](https://github.com/highlightjs/highlight.js/compare/10.7.1...10.7.3)
 
         ---
 
@@ -3653,9 +4619,11 @@
 
         - [Release notes](https://github.com/webpack/webpack-cli/releases)
 
-        - [Changelog](https://github.com/webpack/webpack-cli/blob/master/CHANGELOG.md)
+        -
+        [Changelog](https://github.com/webpack/webpack-cli/blob/master/CHANGELOG.md)
 
-        - [Commits](https://github.com/webpack/webpack-cli/compare/webpack-cli@4.7.2...webpack-cli@4.8.0)
+        -
+        [Commits](https://github.com/webpack/webpack-cli/compare/webpack-cli@4.7.2...webpack-cli@4.8.0)
 
         ---
 
@@ -3682,7 +4650,8 @@
 
         - [Release notes](https://github.com/webpack/webpack/releases)
 
-        - [Commits](https://github.com/webpack/webpack/compare/v5.48.0...v5.51.1)
+        -
+        [Commits](https://github.com/webpack/webpack/compare/v5.48.0...v5.51.1)
 
         ---
 
@@ -4125,11 +5094,14 @@
         Bumps [css-loader](https://github.com/webpack-contrib/css-loader) from
         5.2.6 to 5.2.7.
 
-        - [Release notes](https://github.com/webpack-contrib/css-loader/releases)
+        - [Release
+        notes](https://github.com/webpack-contrib/css-loader/releases)
 
-        - [Changelog](https://github.com/webpack-contrib/css-loader/blob/master/CHANGELOG.md)
+        -
+        [Changelog](https://github.com/webpack-contrib/css-loader/blob/master/CHANGELOG.md)
 
-        - [Commits](https://github.com/webpack-contrib/css-loader/compare/v5.2.6...v5.2.7)
+        -
+        [Commits](https://github.com/webpack-contrib/css-loader/compare/v5.2.6...v5.2.7)
 
         ---
 
@@ -4156,7 +5128,8 @@
 
         - [Release notes](https://github.com/webpack/webpack/releases)
 
-        - [Commits](https://github.com/webpack/webpack/compare/v5.46.0...v5.48.0)
+        -
+        [Commits](https://github.com/webpack/webpack/compare/v5.46.0...v5.48.0)
 
         ---
 
@@ -4218,7 +5191,8 @@
 
         - [Release notes](https://github.com/webpack/webpack/releases)
 
-        - [Commits](https://github.com/webpack/webpack/compare/v5.45.1...v5.46.0)
+        -
+        [Commits](https://github.com/webpack/webpack/compare/v5.45.1...v5.46.0)
 
         ---
 
@@ -4298,7 +5272,8 @@
 
         - [Release notes](https://github.com/webpack/webpack/releases)
 
-        - [Commits](https://github.com/webpack/webpack/compare/v5.44.0...v5.45.1)
+        -
+        [Commits](https://github.com/webpack/webpack/compare/v5.44.0...v5.45.1)
 
         ---
 
@@ -4335,7 +5310,8 @@
 
         - [Release notes](https://github.com/webpack/webpack/releases)
 
-        - [Commits](https://github.com/webpack/webpack/compare/v5.42.1...v5.44.0)
+        -
+        [Commits](https://github.com/webpack/webpack/compare/v5.42.1...v5.44.0)
 
         ---
 
@@ -4428,7 +5404,8 @@
 
         - [Release notes](https://github.com/webpack/webpack/releases)
 
-        - [Commits](https://github.com/webpack/webpack/compare/v5.42.0...v5.42.1)
+        -
+        [Commits](https://github.com/webpack/webpack/compare/v5.42.0...v5.42.1)
 
         ---
 
@@ -4475,7 +5452,8 @@
 
         - [Release notes](https://github.com/webpack/webpack/releases)
 
-        - [Commits](https://github.com/webpack/webpack/compare/v5.41.0...v5.42.0)
+        -
+        [Commits](https://github.com/webpack/webpack/compare/v5.41.0...v5.42.0)
 
         ---
 
@@ -4553,9 +5531,11 @@
 
         - [Release notes](https://github.com/webpack/webpack-cli/releases)
 
-        - [Changelog](https://github.com/webpack/webpack-cli/blob/master/CHANGELOG.md)
+        -
+        [Changelog](https://github.com/webpack/webpack-cli/blob/master/CHANGELOG.md)
 
-        - [Commits](https://github.com/webpack/webpack-cli/compare/webpack-cli@4.6.0...webpack-cli@4.7.2)
+        -
+        [Commits](https://github.com/webpack/webpack-cli/compare/webpack-cli@4.6.0...webpack-cli@4.7.2)
 
         ---
 
@@ -4608,11 +5588,14 @@
         [mini-css-extract-plugin](https://github.com/webpack-contrib/mini-css-extract-plugin)
         from 1.4.0 to 1.6.2.
 
-        - [Release notes](https://github.com/webpack-contrib/mini-css-extract-plugin/releases)
+        - [Release
+        notes](https://github.com/webpack-contrib/mini-css-extract-plugin/releases)
 
-        - [Changelog](https://github.com/webpack-contrib/mini-css-extract-plugin/blob/master/CHANGELOG.md)
+        -
+        [Changelog](https://github.com/webpack-contrib/mini-css-extract-plugin/blob/master/CHANGELOG.md)
 
-        - [Commits](https://github.com/webpack-contrib/mini-css-extract-plugin/compare/v1.4.0...v1.6.2)
+        -
+        [Commits](https://github.com/webpack-contrib/mini-css-extract-plugin/compare/v1.4.0...v1.6.2)
 
         ---
 
@@ -4639,7 +5622,8 @@
 
         - [Release notes](https://github.com/webpack/webpack/releases)
 
-        - [Commits](https://github.com/webpack/webpack/compare/v5.28.0...v5.41.0)
+        -
+        [Commits](https://github.com/webpack/webpack/compare/v5.28.0...v5.41.0)
 
         ---
 
@@ -4664,11 +5648,14 @@
         Bumps [css-loader](https://github.com/webpack-contrib/css-loader) from
         5.2.0 to 5.2.6.
 
-        - [Release notes](https://github.com/webpack-contrib/css-loader/releases)
+        - [Release
+        notes](https://github.com/webpack-contrib/css-loader/releases)
 
-        - [Changelog](https://github.com/webpack-contrib/css-loader/blob/master/CHANGELOG.md)
+        -
+        [Changelog](https://github.com/webpack-contrib/css-loader/blob/master/CHANGELOG.md)
 
-        - [Commits](https://github.com/webpack-contrib/css-loader/compare/v5.2.0...v5.2.6)
+        -
+        [Commits](https://github.com/webpack-contrib/css-loader/compare/v5.2.0...v5.2.6)
 
         ---
 
@@ -4726,9 +5713,11 @@
         [american-british-english-translator](https://github.com/hyperreality/American-British-English-Translator)
         from 0.1.2 to 0.1.4.
 
-        - [Release notes](https://github.com/hyperreality/American-British-English-Translator/releases)
+        - [Release
+        notes](https://github.com/hyperreality/American-British-English-Translator/releases)
 
-        - [Commits](https://github.com/hyperreality/American-British-English-Translator/commits)
+        -
+        [Commits](https://github.com/hyperreality/American-British-English-Translator/commits)
 
         ---
 
@@ -4829,9 +5818,11 @@
 
         - [Release notes](https://github.com/browserslist/browserslist/releases)
 
-        - [Changelog](https://github.com/browserslist/browserslist/blob/main/CHANGELOG.md)
+        -
+        [Changelog](https://github.com/browserslist/browserslist/blob/main/CHANGELOG.md)
 
-        - [Commits](https://github.com/browserslist/browserslist/compare/4.16.3...4.16.6)
+        -
+        [Commits](https://github.com/browserslist/browserslist/compare/4.16.3...4.16.6)
       footers:
         signed-off-by: dependabot[bot] <support@github.com>
       hash: 120640523f79fdb4a3e92488c9935761c2c9fd7b
@@ -5089,7 +6080,8 @@
       body: >-
         Updated screencaps from the Access Tokens in Account Management.
 
-        Need to check the widths of the screencaps once on production with different browsers.
+        Need to check the widths of the screencaps once on production with
+        different browsers.
       hash: 7d366e3ccfacbc0b204ddab6cfbbd6ec0621bbaf
       subject: "patch: Updating screencaps in Account Management"
   date: 2021-05-05T14:48:25Z
@@ -5669,7 +6661,8 @@
       body: >-
         The Nitrogen8MM DWE device has been converted to a private
 
-        device type (https://www.flowdock.com/app/rulemotion/resin-devices/threads/UekZJBCxvruGdw5ceyVEwPU_z5d).
+        device type
+        (https://www.flowdock.com/app/rulemotion/resin-devices/threads/UekZJBCxvruGdw5ceyVEwPU_z5d).
 
         Thus it is better to remove it from the public docs.
       footers:
@@ -6026,7 +7019,10 @@
 
         * specified Fin CM3 (in anticipation of CM4 model)
 
-        ESR support for Nano does not appear to exist though, so keeping it excluded from the list for now. Have asked for confirmation of where he saw support from reporter (dtischler) and will submit another PR if it is indeed supported.
+        ESR support for Nano does not appear to exist though, so keeping it
+        excluded from the list for now. Have asked for confirmation of where he
+        saw support from reporter (dtischler) and will submit another PR if it
+        is indeed supported.
       footers:
         change-type: patch
       hash: ec117f5c0cec80c8cf5757f390b3124b0758f9d2
@@ -6282,8 +7278,7 @@
     - author: Ross Porter
       body: "\r
 
-        dfunckt suggested simpler clarifying language, which sounds
-        good"
+        dfunckt suggested simpler clarifying language, which sounds good"
       footers:
         co-authored-by: dfunckt <dfunckt@users.noreply.github.com>
       hash: 13bf23bbfbf2dff44764d5177c3a9c7b913c838c
@@ -6291,8 +7286,8 @@
     - author: Ross Porter
       body: "\r
 
-        All of the other languages are referenced by their common names
-        e.g. Node.js, so appropriate to change Dotnet to .Net. \r
+        All of the other languages are referenced by their common names e.g.
+        Node.js, so appropriate to change Dotnet to .Net. \r
 
         \r
 
@@ -6301,15 +7296,14 @@
 
         \r
 
-        For instance, in <lang_stack> it may be appropriate to specify
-        the actually acceptable values e.g. python, golang, dotnet, openjdk,
-        node. See
-        https://www.balena.io/docs/reference/base-images/base-images-ref/\r
+        For instance, in <lang_stack> it may be appropriate to specify the
+        actually acceptable values e.g. python, golang, dotnet, openjdk, node.
+        See https://www.balena.io/docs/reference/base-images/base-images-ref/\r
 
         \r
 
-        Also, earlier in the doc, there is a reference to \"Dotnet\"
-        rather than \".Net\"."
+        Also, earlier in the doc, there is a reference to \"Dotnet\" rather than
+        \".Net\"."
       footers:
         co-authored-by: dfunckt <dfunckt@users.noreply.github.com>
       hash: 703ee5438fb12bb16a459e4e79a48a60d4d36c93
@@ -6989,7 +7983,8 @@
 
         to be copied before the install starts. Later as the prepare.sh triggers
 
-        npm build which need all docs to be present, hence copying all files before
+        npm build which need all docs to be present, hence copying all files
+        before
 
         npm install
       footers:
@@ -7249,7 +8244,8 @@
       body: >-
         We need to enforce verbs for whenever roles and access get mentioned.
 
-        Hence, for roles --> assign (assigning roles, assign roles, assigned roles)
+        Hence, for roles --> assign (assigning roles, assign roles, assigned
+        roles)
 
         for access --> grant (Granting access, granted access, grant access)_
       footers:
@@ -7261,7 +8257,8 @@
       body: >-
         We need to enforce verbs for whenever roles and access get mentioned.
 
-        Hence, for roles --> assign (assigning roles, assign roles, assigned roles)
+        Hence, for roles --> assign (assigning roles, assign roles, assigned
+        roles)
 
         for access --> grant (Granting access, granted access, grant access)_
       footers:
@@ -7321,13 +8318,11 @@
     - author: Kyle Harding
       body: "`nm-settings-ref` was attempting to link to\r
 
-        https://developer.gnome.org/NetworkManager/stable/nm-settings.h\
-        tml\r
+        https://developer.gnome.org/NetworkManager/stable/nm-settings.html\r
 
         whereas the best match URL now seems to be\r
 
-        https://developer.gnome.org/NetworkManager/stable/ref-settings.\
-        html\r
+        https://developer.gnome.org/NetworkManager/stable/ref-settings.html\r
 
         \r"
       footers:
@@ -7487,7 +8482,8 @@
 
         - https://www.freedesktop.org/wiki/Software/systemd/timedated/
 
-        - https://github.com/systemd/systemd/blob/e8607daf7d9d4320ddee8fcc6579459ba252714d/src/timedate/timedatectl.c#L177-L188
+        -
+        https://github.com/systemd/systemd/blob/e8607daf7d9d4320ddee8fcc6579459ba252714d/src/timedate/timedatectl.c#L177-L188
       footers:
         change-type: patch
         signed-off-by: Hugh Brown <hugh@balena.io>
@@ -7808,7 +8804,8 @@
 
         half-baked solution will only make it more messy than it already is.
 
-        Once we resolve the issue on where the images are stored and we have fully
+        Once we resolve the issue on where the images are stored and we have
+        fully
 
         migrated to it, I'll revisit this.
       footers:
@@ -9652,7 +10649,8 @@
         In my opinion, names of OS versions are deceitful when the alphabetic
         ordering has wrapped around.
 
-        added: trusty (14.04), xenial (16.04), artful (17.10), bionic (18.04), and cosmic (18.10)
+        added: trusty (14.04), xenial (16.04), artful (17.10), bionic (18.04),
+        and cosmic (18.10)
       footers:
         change-type: patch
         signed-off-by: Matthew McGinn <matthew@balena.io>
@@ -9753,7 +10751,8 @@
 
         ```
 
-        git grep -I --name-only -z -e '' | xargs -0 sed -i 's/[ \t]\+\(\r\?\)$/\1/'
+        git grep -I --name-only -z -e '' | xargs -0 sed -i 's/[
+        \t]\+\(\r\?\)$/\1/'
 
         ```
       footers:
@@ -10209,7 +11208,8 @@
       body: >-
         - Update latest stack changes.
 
-        - Update some notices for node images regarding some versions or architecture were dropped.
+        - Update some notices for node images regarding some versions or
+        architecture were dropped.
       footers:
         change-type: patch
         signed-off-by: Trong Nghia Nguyen <nghiant2710@gmail.com>
@@ -12171,9 +13171,9 @@
 
         \r
 
-        I’ll leave a TBD spot for a style manual, bring your opinions
-        here. (Assuming this is a good place to have that conversation,
-        associated with the document that is changing.)"
+        I’ll leave a TBD spot for a style manual, bring your opinions here.
+        (Assuming this is a good place to have that conversation, associated
+        with the document that is changing.)"
       footers:
         change-type: patch
       hash: 5386555d91253398de5ebee6cf70cdbcf45ae4c5
@@ -12256,15 +13256,14 @@
 
         \r
 
-        From my understanding, we use Param to specify parameters that
-        are passed with the URL.  This can be query params after the ? part of
-        the URL or some placeholder in the case of something like
-        `/device(<ID>)`.\r
+        From my understanding, we use Param to specify parameters that are
+        passed with the URL.  This can be query params after the ? part of the
+        URL or some placeholder in the case of something like `/device(<ID>)`.\r
 
         \r
 
-        On the other hand, what is written in the request body is
-        Payload, which in the cURL examples are passed with the `-data` flag`."
+        On the other hand, what is written in the request body is Payload, which
+        in the cURL examples are passed with the `-data` flag`."
       footers:
         change-type: patch
       hash: e10cb990ba945d86922514c7e85b1b4af5fa41a9
@@ -12386,9 +13385,11 @@
         Some of the categories are harder to understand, when clicking on the
         header
 
-        in the navigation bar takes the user right to the first item in the category.
+        in the navigation bar takes the user right to the first item in the
+        category.
 
-        It makes the other items in the category easy to miss in our navigation bar.
+        It makes the other items in the category easy to miss in our navigation
+        bar.
 
         Add some category pages, from where the rest of the items are linked.
       hash: 5cbbd121faf0aff4a31f22aa81bd217d15756ed9
@@ -12969,9 +13970,11 @@
 
         * adding forums to lists where email and gitter options are mentioned
 
-        * removing extra "contact us" info from some pages, as it should not be explicitly
+        * removing extra "contact us" info from some pages, as it should not be
+        explicitly
 
-        added to page content one by one, but should be in the footer in the future,
+        added to page content one by one, but should be in the footer in the
+        future,
 
         or in the troubleshooting section (as it is now).
       footers:
@@ -13569,7 +14572,8 @@
         therefore the elements don't get an ID automatically assigned. The code
         has been updated to not attach anchor links to elements without IDs.
 
-        The table of device names was also updated to remove the parallella device type, as it is discontinued. A small typo was also fixed.
+        The table of device names was also updated to remove the parallella
+        device type, as it is discontinued. A small typo was also fixed.
       footers:
         change-type: patch
       hash: d3ec23c8cdd7e839a1698b1a90b852b152d5c38b
@@ -13622,7 +14626,8 @@
       body: >-
         More information is available in the related issue.
 
-        Additionally I included a note that the dbus module is available in our Python base images.
+        Additionally I included a note that the dbus module is available in our
+        Python base images.
       footers:
         change-type: patch
         connects-to: "#778"
@@ -14003,7 +15008,10 @@
 
         to fix the page.
 
-        In addition, the getting started page links have been reordered to make more sense, for example "getting-started/raspberrypi3/nodejs" instead of "raspberrypi3/nodejs/getting-started". The redirects have been updated to handle links in the old format.
+        In addition, the getting started page links have been reordered to make
+        more sense, for example "getting-started/raspberrypi3/nodejs" instead of
+        "raspberrypi3/nodejs/getting-started". The redirects have been updated
+        to handle links in the old format.
       footers:
         change-type: patch
       hash: 0d06c3c07f99754210e1acb4da51cdf26b730559
@@ -14018,7 +15026,10 @@
 
         to fix the page.
 
-        In addition, the getting started page links have been reordered to make more sense, for example "getting-started/raspberrypi3/nodejs" instead of "raspberrypi3/nodejs/getting-started". The redirects have been updated to handle links in the old format.
+        In addition, the getting started page links have been reordered to make
+        more sense, for example "getting-started/raspberrypi3/nodejs" instead of
+        "raspberrypi3/nodejs/getting-started". The redirects have been updated
+        to handle links in the old format.
       footers:
         change-type: patch
       hash: 5e02fcc05f1bbe78ae653b0f892336b66622b969

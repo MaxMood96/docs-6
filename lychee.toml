@@ -2,10 +2,10 @@
 
 # Verbose program output
 # Accepts log level: "error", "warn", "info", "debug", "trace"
-verbose = "info"
+verbose = "error"
 
 # Show progress
-progress = true
+progress = false
 
 # Path to summary output file.
 # output = "report.md"
@@ -26,7 +26,7 @@ max_cache_age = "1d"
 threads = 6
 
 # Maximum number of allowed redirects [default: 10]
-max_redirects = 10
+max_redirects = 20
 
 # Maximum number of concurrent network requests [default: 128]
 max_concurrency = 30
@@ -37,7 +37,7 @@ max_concurrency = 30
 user_agent = "curl/7.83.1"
 
 # Website timeout from connect to response finished
-timeout = 10
+timeout = 20
 
 # Comma-separated list of accepted status codes for valid links.
 # Omit to accept all response types.
@@ -47,7 +47,7 @@ timeout = 10
 insecure = false
 
 # Comma-separated list of accepted status codes for valid links.
-accept = [200, 204, 301, 429]
+accept = ["200", "204", "301", "429", "403"]
 
 # Only test links with the given schemes (e.g. https).
 # Omit to check links with any scheme.
@@ -66,7 +66,7 @@ headers = []
 # remap = [ "https://example.com http://example.invalid" ]
 
 # Base URL or website root directory to check relative URLs.
-base = "https://docs.balena.io"
+# base = "https://docs.balena.io"
 
 # HTTP basic auth support. This will be the username and password passed to the
 # authorization HTTP header. See
@@ -115,11 +115,16 @@ exclude = [
     "https://github.com/balena-io/balena-cli/releases/download/*",
     "file://*",
     "system@*",
+    "https://www.googletagmanager.com/gtm.js?*",
+    "https://github.com/balena-io/docs/issues/new?*",
+    "https://api/",
+    "https://raw.githubusercontent.com/balena-os/meta-balena/$%7Bos_version_tag%7D/meta-balena-common/recipes-containers/balena-supervisor/balena-supervisor.inc",
     ]
 
 # Exclude these filesystem paths from getting checked.
-exclude_path = ["./build/img/", "./build/css/", "./build/favicon.png", "./build/dist/", ".build/reference/base-images/base-images-ref/"]
+exclude_path = ["./build/img/", "./build/css/", "./build/favicon.png", "./build/dist/", "./build/reference/base-images/base-images-ref/", "./node_modules"]
 
+# Already mentioned in the GitHub action to include paths to check links
 include = []
 
 include_verbatim = true

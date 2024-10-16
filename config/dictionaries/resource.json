@@ -24,9 +24,17 @@
     ],
     "examples": [
       {
+        "id": "get-all-apps-of-org-by-handle",
+        "summary": "Get all fleets of an organization by its HANDLE",
+        "description": "",
+        "method": "GET",
+        "endpoint": "/v6/application",
+        "filters": "?\\$filter=organization/any(o:o/handle%20eq%20%27<ORG_HANDLE>%27)"
+      },
+      {
         "id": "get-all-apps",
         "summary": "Get all fleets",
-        "description": "",
+        "description": "Note: This will also include all public fleets of the platform. In most cases retrieving the fleets by their organization will be preferable.",
         "method": "GET",
         "endpoint": "/v6/application",
         "filters": ""
@@ -393,6 +401,15 @@
         "data": "{\n    \"should_be_running__release\": \"<RELEASE ID>\"\n}"
       },
       {
+        "id": "update-device-supervisor-by-uuid",
+        "summary": "Mark a device to be updated to a specific supervisor release",
+        "description": "To request a list of available supervisor versions, check the respective documentation page for the supervisor release resource.",
+        "method": "PATCH",
+        "endpoint": "/v6/device(uuid='<UUID>')",
+        "filters": "",
+        "data": "{\n    \"should_be_managed_by__supervisor_release\": \"<SUPERVISOR RELEASE ID>\"\n}"
+      },
+      {
         "id": "rename-device",
         "summary": "Rename device",
         "description": "",
@@ -435,6 +452,52 @@
         "endpoint": "/v6/device(<ID>)",
         "filters": "",
         "data": "{\n    \"is_active\": false\n}"
+      }
+    ]
+  },
+  {
+    "id": "device_type",
+    "name": "Device type",
+    "fields": [
+      "id",
+      "slug",
+      "name",
+      "is_private",
+      "is_of__cpu_architecture",
+      "belongs_to__device_family"
+    ],
+    "examples": [
+      {
+        "id": "device-type-by-id",
+        "summary": "Get a device type by its ID",
+        "description": "When querying a private device type it's necessary to include your bearer token. For public device types the auth header is optional.",
+        "method": "GET",
+        "endpoint": "/v6/device_type(<ID>)",
+        "filters": ""
+      },
+      {
+        "id": "device-type-by-handle",
+        "summary": "Get a device type by its SLUG",
+        "description": "When querying a private device type it's necessary to include your bearer token. For public device types the auth header is optional.",
+        "method": "GET",
+        "endpoint": "/v6/device_type(slug='<DEVICE TYPE SLUG>')",
+        "filters": ""
+      },
+      {
+        "id": "device-type-by-name",
+        "summary": "Get a device type by its NAME",
+        "description": "When querying a private device type it's necessary to include your bearer token. For public device types the auth header is optional.",
+        "method": "GET",
+        "endpoint": "/v6/device_type",
+        "filters": "?\\$filter=name%20eq%20'<DEVICE TYPE NAME>'"
+      },
+      {
+        "id": "get-supported-device-types",
+        "summary": "Get all supported device types",
+        "description": "When querying a private device type it's necessary to include your bearer token. For public device types the auth header is optional.",
+        "method": "GET",
+        "endpoint": "/v6/device_type",
+        "filters": "?\\$filter=is_default_for__application/any(idfa:(idfa/is_host%20eq%20true)%20and%20(idfa/is_archived%20eq%20false)%20and%20(idfa/owns__release/any(r:(r/status%20eq%20'success')%20and%20(r/is_final%20eq%20true)%20and%20(r/is_invalidated%20eq%20false))))&\\$orderby=name%20asc"
       }
     ]
   },
@@ -496,8 +559,16 @@
     ],
     "examples": [
       {
+        "id": "get-device-env-vars-by-device-uuid",
+        "summary": "Get all device environment variables for a device by UUID",
+        "description": "",
+        "method": "GET",
+        "endpoint": "/v6/device_environment_variable",
+        "filters": "?\\$filter=device/any(d:d/uuid%20eq%20'<DEVICE_UUID>')"
+      },
+      {
         "id": "get-device-env-vars",
-        "summary": "Get all device environment variables for a device",
+        "summary": "Get all device environment variables for a device by ID",
         "description": "",
         "method": "GET",
         "endpoint": "/v6/device_environment_variable",
@@ -543,8 +614,24 @@
     ],
     "examples": [
       {
+        "id": "get-device-service-vars-by-device-uuid",
+        "summary": "Get all service variables for a device by UUID",
+        "description": "",
+        "method": "GET",
+        "endpoint": "/v6/device_service_environment_variable",
+        "filters": "?\\$filter=service_install/any(si:si/device/any(d:d/uuid%20eq%20'<DEVICE_UUID>'))"
+      },
+      {
+        "id": "get-device-service-vars-with-service-name",
+        "summary": "Get all service variables for a device by UUID, including the service name",
+        "description": "",
+        "method": "GET",
+        "endpoint": "/v6/device_service_environment_variable",
+        "filters": "?\\$filter=service_install/any(si:si/device/any(d:d/uuid%20eq%20'<DEVICE_UUID>'))&\\$expand=service_install(\\$expand=installs__service(\\$select=id,service_name))"
+      },
+      {
         "id": "get-device-service-vars",
-        "summary": "Get all service variables for a device",
+        "summary": "Get all service variables for a device by ID",
         "description": "",
         "method": "GET",
         "endpoint": "/v6/device_service_environment_variable",
@@ -610,8 +697,8 @@
         "summary": "Update a device tag",
         "description": "",
         "method": "PATCH",
-        "endpoint": "/v6/device_tag",
-        "filters": "?\\$filter=(tag_key%20eq%20'<EXISTING-KEY>')%20and%20(device%20eq%20<DEVICE_ID>)",
+        "endpoint": "/v6/device_tag(device=<DEVICE_ID>,tag_key='<EXISTING-KEY>')",
+        "filters": "",
         "data": "{\n    \"value\": \"<NEW-VALUE>\"\n}"
       },
       {
@@ -621,6 +708,29 @@
         "method": "DELETE",
         "endpoint": "/v6/device_tag(<TAG-ID>)",
         "filters": ""
+      }
+    ]
+  },
+  {
+    "id": "balenaos_versions",
+    "name": "List balenaOS versions",
+    "fields": [],
+    "examples": [
+      {
+        "id": "list-balenaos-versions-for-device-type",
+        "summary": "List the supported balenaOS versions for a device type",
+        "description": "To request a list of the supported balenaOS versions for a particular device type, the `DEVICE TYPE SLUG` parameter is required. Even though this query only selects the `raw_version` field, you can additionally specify any of the fields found in the release resource. The Authorization header is optional.",
+        "method": "GET",
+        "endpoint": "/v6/release",
+        "filters": "?\\$select=raw_version&\\$filter=(is_final%20eq%20true)%20and%20(is_invalidated%20eq%20false)%20and%20(status%20eq%20'success')%20and%20(semver_major%20gt%200)%20and%20(belongs_to__application/any(bta:(bta/is_host%20eq%20true)%20and%20(bta/is_for__device_type/any(dt:dt/slug%20eq%20'<DEVICE TYPE SLUG>'))))&\\$orderby=semver_major%20desc,semver_minor%20desc,semver_patch%20desc,revision%20desc"
+      },
+      {
+        "id": "list-balenaos-versions-for-private-device-type",
+        "summary": "List the supported balenaOS versions for a private device type",
+        "description": "Same as above, but in order to access private device types, you must provide an authentication token.",
+        "method": "GET",
+        "endpoint": "/v6/release",
+        "filters": "?\\$select=raw_version&\\$filter=(is_final%20eq%20true)%20and%20(is_invalidated%20eq%20false)%20and%20(status%20eq%20'success')%20and%20(semver_major%20gt%200)%20and%20(belongs_to__application/any(bta:(bta/is_host%20eq%20true)%20and%20(bta/is_for__device_type/any(dt:dt/slug%20eq%20'<DEVICE TYPE SLUG>'))))&\\$orderby=semver_major%20desc,semver_minor%20desc,semver_patch%20desc,revision%20desc"
       }
     ]
   },
@@ -1042,11 +1152,27 @@
     "examples": [
       {
         "id": "get-supervisor-releases",
-        "summary": "Get all supervisor releases for a device type",
+        "summary": "Get all supervisor releases for a device type by device type ID",
         "description": "",
         "method": "GET",
         "endpoint": "/v6/supervisor_release",
-        "filters": "?\\$filter=device_type%20eq%20'<DEVICE TYPE>'"
+        "filters": "?\\$filter=is_for__device_type%20eq%20'<DEVICE TYPE ID>'"
+      },
+      {
+        "id": "get-supervisor-releases-by-device-type-slug",
+        "summary": "Get all supervisor releases for a device type by device type slug",
+        "description": "",
+        "method": "GET",
+        "endpoint": "/v6/supervisor_release",
+        "filters": "?\\$filter=is_for__device_type/any(dt:dt/slug%20eq%20%27<DEVICE TYPE SLUG>%27)"
+      },
+      {
+        "id": "get-supervisor-release-by-device-type-slug-and-version",
+        "summary": "Get a specific supervisor release version for a device type",
+        "description": "",
+        "method": "GET",
+        "endpoint": "/v6/supervisor_release",
+        "filters": "?\\$filter=(is_for__device_type/any(dt:dt/slug%20eq%20%27<DEVICE TYPE SLUG>%27))%20and%20(supervisor_version%20eq%20%27v<SUPERVISOR VERSION>%27)"
       }
     ]
   },
@@ -1090,8 +1216,8 @@
         "summary": "Delete fleet membership",
         "description": "",
         "method": "DELETE",
-        "endpoint": "/v6/user__is_member_of__application",
-        "filters": "?\\$filter=is_member_of__application%20eq%20<ID>%20and%20user%20eq%20<USER ID>"
+        "endpoint": "/v6/user__is_member_of__application(is_member_of__application=<ID>,user=<USER ID>)",
+        "filters": ""
       }
     ]
   },
