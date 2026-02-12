@@ -42,7 +42,7 @@
     "highlight.js": "10.7.3",
     "jquery": "3.7.1",
     "jquery-colorbox": "1.6.4",
-    "lodash": "^4.17.21"
+    "lodash": "^4.17.23"
   },
   "devDependencies": {
     "cspell": "^8.17.1",
@@ -56,7 +56,7 @@
     "watch": "^1.0.2",
     "webpack": "5.96.1",
     "webpack-cli": "^5.1.4",
-    "wrangler": "^3.99.0"
+    "wrangler": "^3.114.17"
   },
   "versionist": {
     "publishedAt": "2026-02-11T19:47:33.458Z"
